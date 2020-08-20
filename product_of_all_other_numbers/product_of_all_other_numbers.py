@@ -4,9 +4,16 @@ Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
     # Your code here
-
-   for item in arr:
+    result = []
+    for idx in range(0,len(arr) - 1):
+        for k in range(0, len(arr)-1):
+            if k == idx:
+                continue
+            else: 
+                result.append(k * (k + 1))
+                return reutrn 
        
+
 
 
 if __name__ == '__main__':
