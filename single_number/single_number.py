@@ -4,15 +4,18 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    new_arr = sorted(arr)
+    for idx in range(0, len(new_arr), 2):
+        if new_arr[idx] != new_arr[idx + 1] :
+            return new_arr[idx]
 
-    for idx in arr:
-        if arr[idx] == arr[idx + 1]:
-            single_number(arr[idx + 1 :])
-        else:
-            return arr[idx]
+
+
+            
+            
+
 
         
-
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
