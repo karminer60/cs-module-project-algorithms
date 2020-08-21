@@ -9,8 +9,7 @@ def moving_zeroes(arr):
         if item != 0:
             arr.pop(index)
             arr.insert(0, item)
-        else: 
-            continue
+
     return arr
 
 
