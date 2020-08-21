@@ -5,12 +5,12 @@ Returns: a List of integers
 def product_of_all_other_numbers(arr):
     # Your code here
     result = []
-    for idx in range(0,len(arr) - 1):
-        for k in range(0, len(arr) - 1):
-            if k == idx:
-                continue
-            else: 
-                result.append(k * (k + 1))
+    for idx in range(0,len(arr)):
+        product = 1
+        for k in range(0, len(arr)):
+            if k != idx:
+                product = product * arr[k]
+        result.append(product)
     
     return result
 
