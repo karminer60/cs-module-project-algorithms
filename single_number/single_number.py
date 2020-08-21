@@ -9,12 +9,6 @@ def single_number(arr):
         if new_arr[idx] != new_arr[idx + 1] :
             return new_arr[idx]
 
-
-
-            
-            
-
-
         
 
 if __name__ == '__main__':
